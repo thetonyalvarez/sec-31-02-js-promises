@@ -2,8 +2,9 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="Description" content="Enter your description here" />
 		<link rel="shortcut icon" href="" />
 		<link
 			rel="stylesheet"
@@ -13,20 +14,17 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
 		/>
+		<link rel="stylesheet" href="style.css" />
 		<title>Cards</title>
 	</head>
 	<body>
-		<section class="container d-flex m-auto py-5">
-			<a class="btn btn-danger" href="/pt-1-numbers/numbers.html">Numbers</button>
-			<a class="btn btn-danger" href="/pt-2-cards/cards.html">Cards</a>
+		<section id="card-wrapper" class="">
+			<button class="btn btn-primary">Get a Card</button>
+			<div id="card-pile"></div>
 		</section>
-
-		<script
-			src="https://code.jquery.com/jquery-3.6.0.min.js"
-			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-			crossorigin="anonymous"
-		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"></script> -->
+		<script type="text/javascript" src="app.js"></script>
 	</body>
 </html>
