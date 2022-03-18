@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		/>
+		<title>Asynchronous Code in JavaScript</title>
+	</head>
+	<body>
+		<section class="container mb-5" id="number-facts">
+			<h2>Number Facts</h2>
+			<div id="number-facts-1">
+				<h3>Number Facts 1</h3>
+				<p class="small text-muted">
+					Make a request to the Numbers API to get a fact about your
+					favorite number. (Make sure you get back JSON by including
+					the json query key, specific to this API.
+				</p>
+				<div id="fav-number"></div>
+				<div id="fav-number-fact"></div>
+			</div>
+			<div class="pt-5" id="number-facts-2">
+				<h3>Number Facts 2</h3>
+				<p class="small text-muted">
+					Figure out how to get data on multiple numbers in a single
+					request. Make that request and when you get the data back,
+					put all of the number facts on the page.
+				</p>
+				<div id="mult-number-facts"></div>
+			</div>
+			<div class="pt-5" id="number-facts-3">
+				<h3>Number Facts 3</h3>
+				<p class="small text-muted">
+					Use the API to get 4 facts on your favorite number. Once you
+					have them all, put them on the page. It’s okay if some of
+					the facts are repeats.
+				</p>
+				<div id="fav-number-facts"></div>
+			</div>
+		</section>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"></script> -->
+		<script type="text/javascript" src="numbers.js"></script>
+	</body>
+</html>
