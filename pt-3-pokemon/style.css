@@ -1,0 +1,48 @@
+body {
+	padding: 20px;
+}
+button {
+	margin: auto;
+	display: block !important;
+}
+#pokemon-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#pokemon-wrapper .card {
+	width: 30%;
+	margin: 20px 0;
+	border-radius: 30px;
+	padding: 40px;
+	border-color: yellow;
+	border-width: 15px;
+}
+
+#pokemon-wrapper .card h1 {
+	font-size: 24px;
+}
+
+#pokemon-wrapper .card h1,
+#pokemon-wrapper .card p {
+	text-align: center;
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+	#pokemon-wrapper .card h1 {
+		font-size: 28px;
+	}
+	#pokemon-wrapper .card {
+		width: 45%;
+	}
+}
+
+@media (max-width: 478px) {
+	#pokemon-wrapper .card {
+		width: 100%;
+	}
+}

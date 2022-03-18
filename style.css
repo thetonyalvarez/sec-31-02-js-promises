@@ -1,0 +1,28 @@
+.buttons-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn {
+	width: 30%;
+	font-size: 34px;
+}
+
+@media (max-width: 767px) {
+	.buttons-wrapper {
+		display: block;
+	}
+	.btn {
+		width: 100%;
+		display: block !important;
+		margin-bottom: 20px;
+		font-size: 28px;
+	}
+}
+@media (max-width: 478px) {
+	.btn {
+		display: block !important;
+		margin-bottom: 20px;
+		font-size: 24px;
+	}
+}
