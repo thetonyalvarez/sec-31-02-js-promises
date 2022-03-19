@@ -86,11 +86,13 @@ $(function () {
 
 	$btn.on("click", () => {
 		$.getJSON(`${BASE_URL}/api/deck/${deckId}/draw/?count=1`, (deck) => {
-			let imgUrl = deck.cards[0].image;
-			$cardPile.append(`<img src=${imgUrl}>`);
+			let { remaining, cards } = deck;
+			let { image } = cards[0];
+			$cardPile.append(`<img src=${image}>`);
+			console.log("remaining", remaining);
+			if (remaining == 0) {
+				$btn.remove();
+			}
 		});
-		if (deck.remaining == 0) {
-			$btn.remove;
-		}
 	});
 });
